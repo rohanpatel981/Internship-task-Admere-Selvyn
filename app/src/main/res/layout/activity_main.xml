@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-180dp"
+        android:src="@drawable/screen_2_image" />
+
+    <ImageView
+        android:id="@+id/finger"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/screen_2_icon" />
+
+    <TextView
+        android:id="@+id/hurry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HURRY!!"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_below="@id/finger"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="25dp"
+        />
+
+    <TextView
+        android:id="@+id/hunger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HUNGER DON'T WAIT"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        android:layout_below="@id/hurry"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="25dp"
+        />
+
+    <Button
+        android:id="@+id/btn_getStarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_cont_login"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_main"
+        android:text="GET STARTED\n Get exclusive offers and discount"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:onClick="goToLogin"
+        />
+
+    <Button
+        android:id="@+id/btn_cont_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_already_login"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button_secndry"
+        android:text="Continue without Login"
+        android:textColor="#000000"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/btn_already_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_secndry"
+        android:text="Already a Tiffina Member? Login"
+        android:textColor="#000000"
+        android:onClick="goToLogin"
+        />
+
+
+
+
+
+</RelativeLayout>
